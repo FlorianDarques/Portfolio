@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <script src="dist/js/script.min.js" defer></script>
+    <script src="dist/js/email.min.js" defer></script>
+    <title>Darques Florian Workspace</title>
+</head>
+<body class="home">
+    <header class="primary-header flex">
+            <div>
+                <svg class="logo" id="a"  viewBox="0 0 193 96">
+                    <path d="M82.98,0V23.79H23.79v2.8L0,2.8V0H82.98ZM22.53,36.24H56.67v23.79H23.93v36.1H.14V13.72l22.39,22.53h0Z"></path>
+                    <path d="M184.69,21.13c5.46,7.98,8.4,17.35,8.4,27.15s-2.94,19.03-8.4,27.01l-.42,.42c-8.95,12.87-23.65,20.57-39.32,20.57h-47.85V38.21l23.93,23.93v10.21h25.6c7.28-.42,13.85-4.2,18.05-10.21v-.14c2.66-4.06,4.06-8.81,4.06-13.71s-1.4-9.66-4.2-13.71c-4.48-6.44-11.75-10.35-19.59-10.35h-23.93v27.14l-23.93-23.93V.16h47.85c15.67,0,30.36,7.7,39.32,20.57l.42,.42v-.02Z">
+                    </path>
+                </svg>
+            </div>
+            <button 
+            id="mobile-nav-toggle"
+            class="mobile-nav-toggle" 
+            aria-controls="primary-navigation" 
+            aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li class="active">
+                        <a href="#me"><span aria-hidden="true">00</span> Qui suis-je ?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#project"><span aria-hidden="true">01</span> Projets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#hobbies"><span aria-hidden="true">02</span> Passions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact"><span aria-hidden="true">03</span> Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="centrage">
+        <div class="container flex title ">
+            <div class="w-h1">
+                <h1>
+                    Bienvenue dans
+                </h1>
+            </div>
+            <div class="w-h1 txt-al-r">
+                <h1>
+                    mon <span class="quantum color">Workspace</span>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section class="centrage flex me" id="me">
+        <div class="">
+            <h2>
+                Qui suis-je ? 
+            </h2>
+        </div>
+        <div class="greetings">
+            <p>
+                Je vais commencer par faire les presentations. Je suis Florian, basé sur Saint-Omer.
+                Détenteur du quart de siècle pour encore quelques mois je suis actuellement
+                Concepteur <span class="color quantum">Designer UI/UX</span> et <span class="color quantum">Developer Front-end</span> ayant suivi des formations au sein de POPSchool et IDformation.
+            </p>
+        </div>
+        <div class="input">
+            <a class="cv" href="img/cv.pdf" target="_blank">Mon CV ici</a>
+        </div>
+        <div class="swiper d-none">
+            ...
+        </div>
+    </section>
+    <section class="centrage flex section project" id="project">
+        <div>
+            <h2>
+                Projets
+            </h2>
+        </div>
+        <div class="preview">
+            <a href="/">Project</a>
+        </div>
+        <div class="preview">
+            <a href="/">Project</a>
+        </div>
+        <div class="preview">
+            <a href="/">Project</a>
+        </div>
+        <div class="preview">
+            <a href="/">Project</a>
+        </div>
+        <div class="preview">
+            <a href="/">Project</a>
+        </div>
+    </section>
+    <section class="centrage flex section-novh hobbies" id="hobbies">
+        <div>
+            <h2>
+                hobby
+            </h2>
+        </div>
+        <div class="flex test">
+            <div class="card">
+                <img class="hobby" src="img/giga-chad.gif" alt="">
+                <p>passion</p>
+                <p>ce que ça apporte</p>
+            </div>
+            <div class="card">
+                <img class="hobby" src="img/giga-chad.gif" alt="">
+                <p>passion</p>
+                <p>ce que ça apporte</p>
+            </div>
+            <div class="card">
+                <img class="hobby" src="img/giga-chad.gif" alt="">
+                <p>passion</p>
+                <p>ce que ça apporte</p>
+            </div>
+            <div class="card">
+                <img class="hobby" src="img/giga-chad.gif" alt="">
+                <p>passion</p>
+                <p>ce que ça apporte</p>
+            </div>
+            <div class="card">
+                <img class="hobby" src="img/giga-chad.gif" alt="">
+                <p>passion</p>
+                <p>ce que ça apporte</p>
+            </div>
+            <div class="card">
+                <img class="hobby" src="img/giga-chad.gif" alt="">
+                <p>passion</p>
+                <p>ce que ça apporte</p>
+            </div>            
+        </div>
+    </section>
+    <section class="centrage flex section contact" id="contact">
+        <div class="">
+            <h3>
+                Contactez moi par <span id="copy" class="color quantum js-copy copy">Email<p class="info">f.darques @ hotmail.fr</p></span>
+            </h3>
+        </div>
+    </section>
+    <footer class="flex footer centrage">
+        <div>
+            <ul class="flex social-media">
+                <li>
+                    <a href="https://discord.com/users/304679386974650378" target="_blank"><img src="img/discord-light.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/florian-darques-fanatique-numerique/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p>
+                Ce site est destiné à évoluer
+            </p>
+        </div>
+        <div>
+            <a href="/"> Mentions Légales</a>
+        </div>
+    </footer>
+</body>
+</html>

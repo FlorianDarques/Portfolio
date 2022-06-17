@@ -1,0 +1,44 @@
+@import "setting";
+
+
+.centrage {
+    margin: 0 5%;
+    border-bottom: 2px solid $light;
+}
+
+.title {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.test {
+    text-align: right;
+}
+
+
+@media (max-width: 37em) {
+    .title {
+        align-items: center;
+    }
+}
+
+@media (min-width: 37em) and (max-width: 60em) {
+    .title {
+        align-items: center;
+    }
+}
+
+@media (min-width: 60em) {
+    .container {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    .w-h1 {
+        min-width: 70%;
+        max-width: 85%;
+    }
+    .txt-al-r {
+        text-align: right;
+    }
+}

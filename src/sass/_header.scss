@@ -1,0 +1,115 @@
+@import "setting";
+
+
+body {
+    background-color: $dark;
+}
+header {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+.nav {
+    margin: 0 5%;
+}
+
+nav ul li a {
+    font-size: 1.3rem;
+}
+
+.logo {
+    margin: 2rem;
+    width: 87px;
+    height: 43px;
+    fill: $light;
+
+}
+.primary-header {
+    color: $light;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.primary-navigation a > [aria-hidden="true"] {
+    font-weight: 700;
+    margin-inline-end: .75em;
+}
+
+.primary-navigation {
+    background: $darkopacity;
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+    .primary-navigation {
+        background: $lightopacity;
+        backdrop-filter: blur(1rem);
+    }
+}
+
+@media (min-width: 37em) {
+    .primary-navigation {
+        --gap: clamp(1.5rem, 5vw, 3rem);
+        padding-block: 2rem;
+        padding-inline: clamp(3rem, 7vw, 10rem);
+    }
+
+}
+
+@media (max-width: 37em) {
+    nav ul li a {
+        font-size: 1rem;
+    }
+    .primary-navigation {
+        --gap: 2em;
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 45%;
+
+        flex-direction: column;
+        padding: min(30vh,10rem) 2em;
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+    .primary-navigation a > [aria-hidden] {
+        display: none;
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background: transparent;
+        background-image: url("../../img/burger-menu-v2.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 2rem;
+        top: 2.5rem;
+        right: 2rem;
+        aspect-ratio: 1;
+        border: 0;
+    }
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url("../../img/burger-menu-cross-v2.svg");
+    }
+}
+
+@media (min-width: 35em) and (max-width: 60em) {
+    .primary-navigation a > [aria-hidden] {
+        display: none;
+    }
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
+

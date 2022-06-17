@@ -1,0 +1,48 @@
+@import "setting";
+
+.me > p {
+    padding-block: 3rem;
+    margin-inline: 5%;
+}
+
+.input {
+    margin-top: 3rem;
+}
+
+.cv {
+    margin-top: 5rem;
+    padding: .5rem;
+    color: $light;
+    font-size: 1rem;
+    border: 1px solid $light;
+    border-radius: 20px;
+}
+.cv:hover {
+    border: 1px solid $dark;
+    background-color: $light;
+    color: $dark;
+}
+
+.me {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+
+.greetings {
+    width: 85%;
+    max-width: 1400px;
+    text-align: justify;
+}
+
+@media (max-width: 37em) {
+    .greetings {
+        width: 95%;
+    }
+}
+@media (min-width: 37em) and (max-width: 60em) {
+    .greetings {
+        width: 95%;
+    }
+}

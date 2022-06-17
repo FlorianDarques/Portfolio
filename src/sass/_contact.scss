@@ -1,0 +1,44 @@
+@import "setting";
+
+.social-media li {
+    padding-inline-end: 1rem;
+}
+.contact {
+    justify-content: center;
+    align-items: center;
+}
+.copy {
+    position: relative;
+}
+.copy .info {
+    visibility: hidden;
+    background-color: $light;
+    color: $dark;
+    text-align: center;
+    border-radius: 6px;
+    padding: .5rem;
+    font-size: 1rem;
+    font-family: HelveticaNeue moyen;
+    
+    position: absolute;
+    z-index: 1;
+    top: -2.5rem;
+    left: 10%;
+}
+.copy:hover .info{
+    visibility: visible;
+}
+h3 {
+    color: $light;
+    font-size: 5rem;
+}
+
+@media (max-width: 60em) {
+    h3 {
+        font-size: 3rem;
+        text-align: center;
+    } 
+    .copy {
+        position: initial;
+    }
+}

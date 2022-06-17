@@ -1,0 +1,26 @@
+@import "setting";
+
+.footer {
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0px;
+    margin-block: 1.5rem;
+}
+footer ul > li {
+    width: 2rem;
+}
+footer ul {
+    align-items: center;
+}
+footer a {
+    color: $light;
+}
+footer div > p, a {
+    font-size: 1rem;
+}
+@media (max-width: 37em) {
+    .footer {
+        flex-direction: column;
+
+    }
+}

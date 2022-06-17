@@ -1,0 +1,17 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "Theme portfolio pour le cms GRAV",
+  "license": "MIT",
+  "author": "Louison Chevalier",
+  "dependencies": {
+    "@babel/core": "^7.17.9",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-tinypng-compress": "^1.2.5",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.50.1"
+  }
+}

@@ -1,0 +1,113 @@
+$dark: hsl(202 100% 5%);
+$light: hsl(201, 100%, 95%);
+$darkopacity: hsl(0 0% 0% / 0.4);
+$lightopacity: hsl(0 0% 100% / 0.4);
+
+
+body {
+    /*
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    */
+    overflow-x: hidden;
+    font-family: HelveticaNeue;
+    font-weight:300;
+}
+*, *::before, *::after {
+    scroll-behavior: smooth;
+}
+
+a, a:hover, a:focus, a:active a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    color: $light;
+    font-size: 6.4rem;
+}
+h2 {
+    color: $light;
+    padding-block: 3rem;
+    font-size: 4rem;
+}
+p {
+    color: $light;
+    font-size: 2rem;
+}
+.color {
+    color: hsl(279, 37%, 48%);
+}
+.quantum {
+    font-family: Quantum;
+}
+.section {
+    height: 100vh;
+    margin: 0 5%;
+    border-bottom: 2px solid $light;
+}
+.section-novh {
+    margin: 0 5%;
+    border-bottom: 2px solid $light;
+}
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+.d-block {
+    display: block;
+}
+.d-none {
+    display: none;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.txt-al-r {
+    text-align: right;
+}
+@media (max-width: 37em) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 37em) and (max-width: 60em) {
+    h1 {
+        font-size: 4.65rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 60em) {
+    .container {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+}
+/* @media (min-width: 160em) {
+
+} */
